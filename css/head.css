@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top_div{
+    background-color: blue;
+    height: 160px;
+    width: 100%;
+}
+
+.first_div{
+    background-color: rgb(245,195,196);
+    height: 30px;
+    width: 100%;
+   
+}
+.first_div ul{
+    width: 95%; 
+    margin-left: auto; 
+     margin-right: auto;
+   
+}
+
+.first_div li{
+  display: inline-block;
+}
+
+.lunguage{
+    border: none;
+    outline: none;
+    background-color: rgb(245,195,196) ;
+}
+.lun_parent img{
+    height: 12px;
+}
+.state{
+    border: none;
+    outline: none;
+    background-color: rgb(245,195,196) ;  
+
+}
+.shiping{
+     margin-left: 230px;
+    text-align: center;
+}
+
+.mail a{
+ color: black;
+ text-decoration: none;
+} 
+.mail{
+    float: right;
+}
+
+.menu{
+    color: rgb(226, 224, 228);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;}
+
+    .dropdown {
+     width:20% ;
+     margin-left: 70px;
+     font-size: small;
+    }
+    .dropdown a{
+     text-align: left;
+    }
+    #search{
+     margin-top:30px ;
+     left: 90px;
+
+  }
+    li a{
+       color: aliceblue;
+    }
+    a:hover {
+       background-color: brown;
+    }
+    li{
+       display: block;
+    }
+    #check:checked ~ ul{
+       left: 0;
+    }
+
+    
+
+.second_div{
+    /* background-color: rgb(190, 21, 21); */
+    height: 90px;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+
+.social_media img{
+margin-top:30px ;
+margin-left: 10px;
+width: 25px;
+}
+
+ .search_inp{
+    background-color: white;   
+    padding: 10px 20px 10px 20px;
+    width: 80%;
+    border-radius: 25px;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid gray;
+    background-image: url('./../img/search\ water.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.account_parent {
+    margin-top: 30px;
+}
+
+.account_parent  .rate{
+width:40px ;
+}
+

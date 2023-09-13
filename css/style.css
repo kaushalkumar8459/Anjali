@@ -1,0 +1,919 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.top_div{
+    background-color: blue;
+    height: 160px;
+    width: 100%;
+}
+
+.first_div{
+    background-color: rgb(245,195,196);
+    height: 30px;
+    width: 100%;
+   
+}
+.first_div ul{
+    width: 95%; 
+    margin-left: auto; 
+     margin-right: auto;
+   
+}
+
+.first_div li{
+  display: inline-block;
+}
+
+.lunguage{
+    border: none;
+    outline: none;
+    background-color: rgb(245,195,196) ;
+}
+.lun_parent img{
+    height: 12px;
+}
+.state{
+    border: none;
+    outline: none;
+    background-color: rgb(245,195,196) ;  
+
+}
+.shiping{
+     margin-left: 230px;
+    text-align: center;
+}
+
+.mail a{
+ color: black;
+ text-decoration: none;
+} 
+.mail{
+    float: right;
+}
+
+.menu{
+    color: rgb(226, 224, 228);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;}
+
+    .dropdown {
+     width:20% ;
+     margin-left: 70px;
+     font-size: small;
+    }
+    .dropdown a{
+     text-align: left;
+    }
+    #search{
+     margin-top:30px ;
+     left: 90px;
+
+  }
+    li a{
+       color: aliceblue;
+    }
+    a:hover {
+       background-color: brown;
+    }
+    li{
+       display: block;
+    }
+    #check:checked ~ ul{
+       left: 0;
+    }
+
+    
+
+.second_div{
+    /* background-color: rgb(190, 21, 21); */
+    height: 90px;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+
+.social_media img{
+margin-top:30px ;
+margin-left: 10px;
+width: 25px;
+}
+
+ .search_inp{
+    background-color: white;   
+    padding: 10px 20px 10px 20px;
+    width: 80%;
+    border-radius: 25px;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid gray;
+    background-image: url('./../img/search\ water.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.account_parent {
+    margin-top: 30px;
+}
+
+.account_parent  .rate{
+width:40px ;
+}
+
+
+nav {
+
+    background-color: rgb(179, 219, 221);
+    height: 70px;
+    width: 100%;
+}
+
+nav .ul_input {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.ul_input li {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 5px;
+
+}
+
+.ul_input li a {
+    color: aliceblue;
+    font-size: 17px;
+
+}
+
+a.active,
+a:hover {
+    transition: .5s;
+}
+
+.chechbtn {
+    font-size: 20px;
+    margin-right: 40px;
+    line-height: 80px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.mens {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(179, 219, 221);
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+@media (max-width: 858px) {
+
+    .chechbtn {
+        display: block;
+        color: aliceblue;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .mens {
+        border: none;
+        outline: none;
+        color: white;
+        background-color: black;
+    }
+
+    .ul_input {
+        position: fixed;
+        width: 60%;
+        height: 600px;
+        background-color: black;
+        top: 60px;
+        left: -100%;
+        transform: 10px;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .ul_input li {
+        display: block;
+    }
+
+    .ul_input li a {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    a.active,
+    a:hover {
+        background: none;
+        color: palegreen;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .first_div,
+    .second_div {
+        display: none;
+    }
+
+
+    .connect:hover .dropdown {
+        display: block;
+    }
+
+    .dropdown {
+
+        width: 20%;
+        margin-left: 70px;
+        font-size: small;
+    }
+
+
+
+}
+
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slider_parent {
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    left: 20px;
+    top: 460px;
+}
+
+.btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: palevioletred;
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+.info {
+    position: absolute;
+    left: 80px;
+    top: 250px;
+}
+
+.info p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.last_slide .bton {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: rgb(179, 219, 221);
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+.add_name {
+    animation-name: transfer;
+    animation-duration: 1.5s;
+}
+
+@keyframes transfer {
+    from {
+        opacity: .9
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.active_icon {
+    text-align: right;
+    z-index: 1;
+    position: sticky;
+    top: 50%;
+}
+
+@media (max-width: 858px) {
+
+    .info {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        font-size: 5px;
+    }
+
+    .info p {
+        margin-top: auto;
+        font-size: 8px;
+    }
+
+    .btn,
+    .last_slide .bton {
+        width: 50px;
+        height: 10px;
+        padding : 3px;
+        font-size: 5px;
+        text-align: center;
+    }
+
+    .arrow img {
+        width: 10px;
+    }
+
+    .arrow {
+        left: 20px;
+        top: 90px;
+    }
+
+    .active_icon img {
+        width: 20px;
+
+    }
+}
+
+
+
+/* middle section  css======= */
+
+
+.middle_container {
+    width: 100%;
+}
+
+
+.two_img_parent {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.two_img_parent img {
+    width: 100%;
+}
+
+.first_img {
+    position: relative;
+}
+
+.first_img .mid_btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: palevioletred;
+    padding: 8px;
+    color: white;
+    position: absolute;
+    left: 220px;
+    top: 350px;
+    text-align: center;
+}
+
+@media (max-width: 858px) {
+
+
+    .first_img .mid_btn {
+        width: 40px;
+        height: 5px;
+        padding: 5px;
+        font-size: 5px;
+        text-align: center;
+        left: 50px;
+        top: 60px;
+    }
+
+
+}
+
+
+
+.four_top {
+    width: 100%;
+    position: relative;
+}
+
+.four_img_container {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four_left_arrow {
+    position: absolute;
+    top: 50%;
+}
+
+.four_right_arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.head_first {
+    width: 60%;
+}
+
+.head_second {
+    width: 40%;
+}
+
+.heading h1 {
+    float: right;
+
+}
+
+
+.product_btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: palevioletred;
+    padding: 8px;
+    color: white;
+    float: right;
+}
+
+.four_img_parent {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.four_img_parent .text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.four_img_parent .text h5 {
+
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.card {
+    width: 300px;
+    height: 470px;
+    margin-top: 10px;
+}
+
+.card>img {
+    width: 290px;
+}
+
+.text #rate_add {
+    float: right;
+}
+
+.bag {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(179, 219, 221);
+
+}
+
+.bag img {
+    width: 20px;
+}
+
+@media (max-width: 858px) {
+    .heading {
+        padding: 3px 0 0 1px;
+    }
+
+    .heading h1 {
+        font-size: small;
+    }
+
+    .product_btn {
+        width: 50px;
+        height: 10px;
+        padding: 4px;
+        font-size: 5px;
+        text-align: center
+    }
+
+    .card>img {
+        width: 150px;
+    }
+
+    .card {
+        width: 150px;
+        height: 320px;
+        margin-top: 10px;
+    }
+
+    .bag {
+        height: 18px;
+        margin-top: 10px;
+        padding: 1px;
+    }
+
+    .bag p {
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+    .bag img {
+        width: 15px;
+    }
+
+    #none {
+        display: none;
+    }
+
+    .four_left_arrow {
+        position: absolute;
+        top: 50%;
+    }
+
+    .four_right_arrow {
+        right: 0;
+        top: 50%;
+    }
+
+    .four_left_arrow img {
+        width: 20px;
+
+    }
+
+    .four_right_arrow img {
+        width: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+/* sign up container ========*/
+
+
+.signup_container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sign_parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+
+}
+
+.parent {
+    width: 100%;
+}
+
+.parent img {
+    width: 100%;
+}
+
+.inner {
+    width: 90%;
+    height: 410px;
+    background-color: rgb(230, 218, 232);
+    margin-left: auto;
+}
+
+.in {
+    width: 80%;
+    height: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner h1,
+p {
+    text-align: center;
+}
+
+#email {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    width: 90%;
+    border: none;
+    margin-top: 30px;
+    outline: none;
+    margin-left: 15px;
+}
+
+#email::-webkit-input-placeholder {
+    text-align: center;
+
+}
+
+.btn_sub_parent {
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.subscribe_btn {
+    border: none;
+    background-color: palevioletred;
+    outline: none;
+    width: 30%;
+    padding: 5px;
+    color: white;
+
+}
+
+.inner p {
+    text-align: center;
+    color: grey;
+}
+
+.inner p a {
+    color: gray;
+}
+
+
+@media (max-width: 858px) {
+    .signup_container {
+        height: 400px;
+        width: 100%;
+    }
+
+    .sign_parent {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+    }
+
+    .inner {
+        height: 200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .in {
+        width: 100%;
+    }
+
+    .inner p {
+        margin-top: -10px;
+        font-size: 10px;
+    }
+
+    .inner h1 {
+        font-size: 10px;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+
+    #email {
+        padding: 2px 5px 2px 5px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    #email::-webkit-input-placeholder {
+        font-size: 10px;
+    }
+
+    .subscribe_btn {
+        width: 30%;
+        height: 15px;
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    .parent img {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+.brand_parent_heading {
+    width: 100%;
+    text-align: center;
+}
+
+.logo_block {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 50px;
+}
+.logoes_parent {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+
+
+
+.logo_btn_div{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.logo_btn{
+    border: none;
+    background-color: palevioletred;
+    outline: none;
+    width: 10%;
+    padding: 10px;
+    color: white;
+}
+
+
+
+@media (max-width: 858px){
+    .logoes_parent{
+        height: 350px;
+        margin-top: 30px;
+         background-color: white;
+    }
+    .logo_block{
+        height: 300px;
+    }
+
+    .brand_parent_heading h1{
+        font-size: 20px;
+    }
+    .logos {
+        height: 200px;
+        margin-top: 10px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logos img{
+        width: 90px;
+    }
+    .logo_btn{
+    
+        width: 40%;
+        
+    }
+    #arNan{
+        display: none;
+    }
+
+
+
+
+}
+
+/* footer start =========*/
+
+
+
+.footer{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(179,219,221);
+
+    padding-top: 70px;
+
+}
+
+.food_cotainer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.food_heading{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.food_card{
+    width: 45%;
+    text-align: center;
+
+}
+.food_card p,h3,h4{
+    margin-top: 10px;
+}
+
+.food_card_parent{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 858px){
+
+    
+    .footer{
+     margin-top: 5px;
+     height: 1200px;
+    }
+    .food_cotainer{    
+        width: 90%;
+        height: 900px;
+    }
+    .food_card_parent{
+        flex-direction: column;
+        margin-top: auto; 
+    }
+
+    .food_card{
+        width: 100%;
+    }
+    .food_heading h2{
+        font-size: 20px;
+    } 
+}

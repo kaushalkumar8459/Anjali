@@ -1,0 +1,491 @@
+.slide {
+    display: none;
+    position: relative;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slider_parent {
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    left: 20px;
+    top: 460px;
+}
+
+.btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: palevioletred;
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+.info {
+    position: absolute;
+    left: 80px;
+    top: 250px;
+}
+
+.info p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.last_slide .bton {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: rgb(179, 219, 221);
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+.add_name {
+    animation-name: transfer;
+    animation-duration: 1.5s;
+}
+
+@keyframes transfer {
+    from {
+        opacity: .9
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.active_icon {
+    text-align: right;
+    z-index: 1;
+    position: sticky;
+    top: 50%;
+}
+
+@media (max-width: 858px) {
+
+    .info {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        font-size: 5px;
+    }
+
+    .info p {
+        margin-top: auto;
+        font-size: 8px;
+    }
+
+    .btn,
+    .last_slide .bton {
+        width: 50px;
+        height: 10px;
+        padding : 3px;
+        font-size: 5px;
+        text-align: center;
+    }
+
+    .arrow img {
+        width: 10px;
+    }
+
+    .arrow {
+        left: 20px;
+        top: 90px;
+    }
+
+    .active_icon img {
+        width: 20px;
+
+    }
+}
+
+
+
+/* middle section  css======= */
+
+
+.middle_container {
+    width: 100%;
+}
+
+
+.two_img_parent {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.two_img_parent img {
+    width: 100%;
+}
+
+.first_img {
+    position: relative;
+}
+
+.first_img .mid_btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: palevioletred;
+    padding: 8px;
+    color: white;
+    position: absolute;
+    left: 220px;
+    top: 350px;
+    text-align: center;
+}
+
+@media (max-width: 858px) {
+
+
+    .first_img .mid_btn {
+        width: 40px;
+        height: 5px;
+        padding: 5px;
+        font-size: 5px;
+        text-align: center;
+        left: 50px;
+        top: 60px;
+    }
+
+
+}
+
+
+
+.four_top {
+    width: 100%;
+    position: relative;
+}
+
+.four_img_container {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four_left_arrow {
+    position: absolute;
+    top: 50%;
+}
+
+.four_right_arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.head_first {
+    width: 60%;
+}
+
+.head_second {
+    width: 40%;
+}
+
+.heading h1 {
+    float: right;
+
+}
+
+
+.product_btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 140px;
+    background-color: palevioletred;
+    padding: 8px;
+    color: white;
+    float: right;
+}
+
+.four_img_parent {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.four_img_parent .text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.four_img_parent .text h5 {
+
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.card {
+    width: 300px;
+    height: 470px;
+    margin-top: 10px;
+}
+
+.card>img {
+    width: 290px;
+}
+
+.text #rate_add {
+    float: right;
+}
+
+.bag {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(179, 219, 221);
+
+}
+
+.bag img {
+    width: 20px;
+}
+
+@media (max-width: 858px) {
+    .heading {
+        padding: 3px 0 0 1px;
+    }
+
+    .heading h1 {
+        font-size: small;
+    }
+
+    .product_btn {
+        width: 50px;
+        height: 10px;
+        padding: 4px;
+        font-size: 5px;
+        text-align: center
+    }
+
+    .card>img {
+        width: 150px;
+    }
+
+    .card {
+        width: 150px;
+        height: 320px;
+        margin-top: 10px;
+    }
+
+    .bag {
+        height: 18px;
+        margin-top: 10px;
+        padding: 1px;
+    }
+
+    .bag p {
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+    .bag img {
+        width: 15px;
+    }
+
+    #none {
+        display: none;
+    }
+
+    .four_left_arrow {
+        position: absolute;
+        top: 50%;
+    }
+
+    .four_right_arrow {
+        right: 0;
+        top: 50%;
+    }
+
+    .four_left_arrow img {
+        width: 20px;
+
+    }
+
+    .four_right_arrow img {
+        width: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+/* sign up container ========*/
+
+
+.signup_container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sign_parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+
+}
+
+.parent {
+    width: 100%;
+}
+
+.parent img {
+    width: 100%;
+}
+
+.inner {
+    width: 90%;
+    height: 410px;
+    background-color: rgb(230, 218, 232);
+    margin-left: auto;
+}
+
+.in {
+    width: 80%;
+    height: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner h1,
+p {
+    text-align: center;
+}
+
+#email {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    width: 90%;
+    border: none;
+    margin-top: 30px;
+    outline: none;
+    margin-left: 15px;
+}
+
+#email::-webkit-input-placeholder {
+    text-align: center;
+
+}
+
+.btn_sub_parent {
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.subscribe_btn {
+    border: none;
+    background-color: palevioletred;
+    outline: none;
+    width: 30%;
+    padding: 5px;
+    color: white;
+
+}
+
+.inner p {
+    text-align: center;
+    color: grey;
+}
+
+.inner p a {
+    color: gray;
+}
+
+
+@media (max-width: 858px) {
+    .signup_container {
+        height: 400px;
+        width: 100%;
+    }
+
+    .sign_parent {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+    }
+
+    .inner {
+        height: 200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .in {
+        width: 100%;
+    }
+
+    .inner p {
+        margin-top: -10px;
+        font-size: 10px;
+    }
+
+    .inner h1 {
+        font-size: 10px;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+
+    #email {
+        padding: 2px 5px 2px 5px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    #email::-webkit-input-placeholder {
+        font-size: 10px;
+    }
+
+    .subscribe_btn {
+        width: 30%;
+        height: 15px;
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    .parent img {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
